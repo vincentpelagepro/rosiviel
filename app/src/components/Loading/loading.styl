@@ -1,0 +1,117 @@
+@require "app/styles/charte"
+
+#loading
+	height: 100vh
+	// background-image: $background-login
+
+.loading-text
+	text-align: center
+	padding-top: 3em
+	// color: $cream
+	font-size: 3em
+	font-weight: bold
+	animation: colortext 3s infinite
+	-webkit-animation: colortext 3s infinite
+
+.loading-animation
+	width: 80px
+	height: 80px
+	// background-color: $cream
+	margin: 100px auto
+	-webkit-animation: sk-rotateplane 1.2s infinite ease-in-out
+	animation: sk-rotateplane 1.2s infinite ease-in-out
+
+@-webkit-keyframes sk-rotateplane {
+	0% { -webkit-transform: perspective(120px) }
+	50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+	100% { -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	} 50% {
+		ransform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+		-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	} 100% {
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+		-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+	}
+}
+
+.loading-color
+	width: 80px
+	height: 80px
+	margin: 100px auto
+	animation: colorchange 3s infinite
+	-webkit-animation: colorchange 3s infinite
+
+@keyframes colorchange
+	0%
+		background: $campaigns-color
+
+	25%
+		background: $adgroups-color
+
+	50%
+		background: $ads-color
+
+	75%
+		background: $keywords-color
+
+	100%
+		background: $campaigns-color
+
+
+@-webkit-keyframes colorchange
+	0%
+		background: $campaigns-color
+
+	25%
+		background: $adgroups-color
+
+	50%
+		background: $ads-color
+
+	75%
+		background: $keywords-color
+
+	100%
+		background: $campaigns-color
+
+
+
+
+@keyframes colortext
+	0%
+		color: $adgroups-color
+
+	25%
+		color: $ads-color
+
+	50%
+		color: $keywords-color
+
+	75%
+		color: $campaigns-color
+
+	100%
+		color: $adgroups-color
+
+
+@-webkit-keyframes colortext
+	0%
+		color: $adgroups-color
+
+	25%
+		color: $ads-color
+
+	50%
+		color: $keywords-color
+
+	75%
+		color: $campaigns-color
+
+	100%
+		color: $adgroups-color

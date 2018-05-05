@@ -1,0 +1,64 @@
+@require "app/styles/charte"
+
+.navbar-form
+	margin-right: 0
+
+.navbar
+	margin-bottom: 0
+
+.nav a
+	font-size: 17px
+
+img
+	width: 20%
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+	background-color: $white
+
+.navbar-default
+	background-color: $white
+
+.navbar-default .navbar-nav>li>a
+	color: none
+
+
+
+#header-overview a:hover
+	font-weight: 500
+	color:$black
+
+#header-campaigns a:hover
+	color:$campaigns-color
+	font-weight: 500
+
+#header-adgroups a:hover
+	color:$adgroups-color
+	font-weight: 500
+
+#adsheader a:hover
+	color:$coffee
+	font-weight: 500
+
+#header-keywords a:hover
+	color:$keywords-color
+	font-weight: 500
+
+#header-logout
+	padding-top:15px
+
+	&-button
+		border: 0
+		background: 0
+		color: $btn-color-grey
+
+#header-logout button:hover
+	color:$black
+	font-weight: 500
+
+.nav li
+	cursor: pointer
+
+@media (max-width: 778px)
+
+	#header-logout
+		padding-left:10px

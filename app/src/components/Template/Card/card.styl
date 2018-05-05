@@ -1,0 +1,38 @@
+@require "app/styles/charte"
+
+.cards
+	font-size: 0
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+
+.card
+	border: 2px solid $grey
+	margin-bottom: 5px
+	height: 140px
+	display: flex
+	justify-content: center
+	flex-direction: column
+	text-align: center
+	width: 100%
+
+	&-tips
+		position: relative
+		bottom: 25px
+		font-size: 20px
+	&-tips a:hover
+		text-decoration: none
+
+.total-value
+	font-size: 30px
+
+@media (min-width: 772px)
+
+	.card
+		width: 48%
+
+
+@media (min-width: 992px)
+
+	.card
+		width: 24%

@@ -1,0 +1,36 @@
+@require "app/styles/charte"
+
+	.form-date
+		display: inline-block
+		width: 100%
+		margin-top: 25px
+		margin-bottom: 25px
+		font-size: 0
+
+	.form-date input, .form-data input:focus
+		padding: 2px
+		border: 0
+		border-bottom: 2px solid $grey
+		box-shadow: none
+		margin-right: 3%
+		font-weight: 500
+		width: 47%
+		font-size: 16px
+
+
+	.form-date button
+		border-radius: 5px
+		border: 0
+		padding: 3px 15px
+		width: 100%
+		margin-top: 15px
+		font-size: 16px
+
+@media (min-width: 992px)
+
+	.form-date input, .form-data input:focus
+		margin-right: 10px
+		width: auto
+
+	.form-date button
+		width: auto

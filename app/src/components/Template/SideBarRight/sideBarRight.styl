@@ -1,0 +1,34 @@
+@require "app/styles/charte"
+
+#sidebar-right h2
+	font-size: 24px
+	text-align: center
+
+#sidebar-right ul
+	 margin-left: 20px
+
+#sidebar-right li
+	list-style: initial
+	padding: 0.5em
+
+#sidebar-right
+	background-color: $background-color-grey
+	position: relative
+	margin-top: 50px
+	margin-bottom: 10px
+	height: 200px
+
+.data-detail
+	text-align: center
+	margin-bottom: 0.5em
+
+@media (min-width: 992px)
+
+	#sidebar-right
+		min-height: 300px
+		position: absolute
+		right: 90px
+		top: 50%
+		transform: translateY(-50%)
+		margin: 0
+		height: 0

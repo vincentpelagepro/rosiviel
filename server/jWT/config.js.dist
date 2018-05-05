@@ -1,0 +1,6 @@
+/*
+ * jWT
+ */
+
+// secret
+export default '';

@@ -1,0 +1,15 @@
+/*
+* JWT
+*/
+// dev
+export const jWTKey = '';
+
+
+/*
+* basepath axios requests
+*/
+// dev
+export const axiosBasepath = '';
+
+// // prod
+// export const axiosBasepath = '';

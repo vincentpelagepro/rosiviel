@@ -1,0 +1,33 @@
+@require "app/styles/charte"
+
+#categroy-table
+	overflow-x: auto
+	margin: 30px auto
+
+#data-table
+	margin: 0 auto
+
+td, th
+	padding: 5px 34px
+	border: 1px solid $grey
+
+th
+	font-weight: bold
+
+#categroy-table::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 6px $grey-tranparent-light
+	background-color: $background-color-grey
+
+#categroy-table::-webkit-scrollbar
+	width: 40px
+	height: 10px
+	background-color: $background-color-grey
+
+#categroy-table::-webkit-scrollbar-thumb
+	border-radius: 5px
+	background-color: $background-color-dark-grey
+
+@media (min-width: 992px)
+
+	td, th
+		padding: 10px 34px
